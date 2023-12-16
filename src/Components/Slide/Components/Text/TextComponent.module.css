@@ -1,0 +1,16 @@
+.text {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+}
+
+.textBlock {
+    resize: unset;
+    overflow: hidden;
+}
+
+.text:active, .text:hover, .text:focus {
+    outline-color: #c8fce8;
+}

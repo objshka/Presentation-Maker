@@ -1,0 +1,18 @@
+.workspace__background {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: #dddede;
+    align-items: center;
+    overflow: hidden;
+}
+
+.workspace__content {
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #000;
+    width: 95%;
+    height: 92%;
+}
