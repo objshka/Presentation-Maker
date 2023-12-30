@@ -261,7 +261,6 @@ export function editBlockSize(editor: Editor, payload: { slideIndex: number, blo
     };
 }
 
-
 // content of block functions
 export function editFontFamily(editor: Editor, payload: { slideIndex: number, blockIndex: number, newFontFamily: string }): Editor {
     const slide = editor.presentation.slideList[payload.slideIndex - 1];
