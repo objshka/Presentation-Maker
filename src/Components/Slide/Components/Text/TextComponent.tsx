@@ -22,6 +22,7 @@ export function TextComponent(Props: {
     blockIndex: number,
     presentation: Presentation;
 }) {
+
     let style = {
         fontFamily: Props.fontFamily,
         color: Props.fontColor,

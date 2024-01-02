@@ -1,4 +1,5 @@
 import {defaultSlide, defaultSlideColor} from "./consts";
+import React, {useState} from "react";
 
 // presentation functions
 export function createPresentation(): Editor {
@@ -39,9 +40,9 @@ export function renamePresentation(editor: Editor, inputName: string): Editor {
         }
     };
 }
-
 // slide functions
 export function createSlide(editor: Editor): Editor {
+
     const newSlide: Slide = {
         slideIndex: editor.presentation.slideList.length + 1,
         blockList: [],

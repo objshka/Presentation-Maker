@@ -30,7 +30,6 @@ exports.MenuBar = void 0;
 const react_1 = __importStar(require("react"));
 const MenuBar_module_css_1 = __importDefault(require("./MenuBar.module.css"));
 const stateManagerFunctions_1 = require("../../stateManager/stateManagerFunctions");
-const exportToPDF_1 = require("../../utils/exportToPDF");
 function MenuBar(Props) {
     let name = Props.presentation.name;
     const [namePresentation, setName] = (0, react_1.useState)(name);
@@ -63,8 +62,7 @@ function MenuBar(Props) {
             react_1.default.createElement("button", { onClick: stateManagerFunctions_1.createPresentationHandler, className: MenuBar_module_css_1.default.header__action__create }, "\u0421\u043E\u0437\u0434\u0430\u0442\u044C"),
             react_1.default.createElement("label", { htmlFor: "json-file-handler", className: MenuBar_module_css_1.default.header__action__open__label }, "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"),
             react_1.default.createElement("input", { onChange: fileChangeHandle, id: "json-file-handler", type: "file", accept: ".json", className: MenuBar_module_css_1.default.header__action__open }),
-            react_1.default.createElement("button", { onClick: stateManagerFunctions_1.saveAsJsonHandler, className: MenuBar_module_css_1.default.header__action__save }, "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C"),
-            react_1.default.createElement("button", { onClick: () => (0, exportToPDF_1.savePresentationAsPDF)(Props.presentation), className: MenuBar_module_css_1.default.header__action__export }, "\u042D\u043A\u0441\u043F\u043E\u0440\u0442"))));
+            react_1.default.createElement("button", { onClick: stateManagerFunctions_1.saveAsJsonHandler, className: MenuBar_module_css_1.default.header__action__save }, "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C"))));
 }
 exports.MenuBar = MenuBar;
 exports.default = MenuBar;

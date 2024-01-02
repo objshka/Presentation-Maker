@@ -6,7 +6,6 @@ import {
     renamePresentationHandler,
     saveAsJsonHandler
 } from "../../stateManager/stateManagerFunctions";
-import {savePresentationAsPDF} from "../../utils/exportToPDF";
 
 export function MenuBar(Props: { presentation: Presentation }) {
     let name = Props.presentation.name
@@ -62,10 +61,6 @@ export function MenuBar(Props: { presentation: Presentation }) {
                 <button
                     onClick={saveAsJsonHandler}
                     className={style.header__action__save}>Сохранить
-                </button>
-                <button
-                    onClick={() => savePresentationAsPDF(Props.presentation)}
-                    className={style.header__action__export}>Экспорт
                 </button>
             </div>
         </div>
